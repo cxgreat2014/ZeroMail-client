@@ -7,6 +7,7 @@ import execjs
 
 
 class ZeroMail:
+    __version__ == 0.1
     def __init__(self, host='127.0.0.1', port=43110, address='Mail.ZeroNetwork.bit', port_control='http',
                  data_file='data.json'):
         html = get(f'{port_control}://{host}:{port}/{address}/', headers={"ACCEPT": "text/html"}).content.decode()
